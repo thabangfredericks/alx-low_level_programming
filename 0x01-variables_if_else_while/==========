@@ -1,0 +1,4 @@
+ise16.c:19: ERROR: code indent should use tabs where possible
+8-print_base16.c:19: WARNING: please, no spaces at the start of a line
+total: 1 errors, 1 warnings, 28 lines checked
+main
