@@ -2,12 +2,10 @@
 
 /**
  * puts_half - Prints half of a string
- * @str: The strong to print
+ * @str: The string to print
  * Return: void
  */
-
 void puts_half(char *str)
-
 {
 int j = 0;
 int k;
@@ -16,16 +14,19 @@ while (str[j] != '\0')
 {
 j++;
 }
-if (j % 2 == 1)
-{
-k = (j - 1) / 2;
-k += 1;
+
+if (j % 2 == 0)
 {
 k = j / 2;
 }
-for (; k < j; k++)
+else
 {
-_putchar(str[k]);
+k = (j - 1) / 2;
+}
+
+for (int i = k; i < j; i++)
+{
+_putchar(str[i]);
 }
 _putchar('\n');
 }
